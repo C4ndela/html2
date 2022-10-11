@@ -1,26 +1,26 @@
 :root {
   --color-dark: #15181f;
-  --color-dark-x: #4e82e9;
+  --color-dark-x: #80a0df;
   --color-dark-xx: #1f232b;
   --color-light: #ffff; 
-  --color-grey: #f5f6f8; 
+  --color-grey: #af315b; 
 }
 
 body{
     font-family: 'Roboto', sans-serif;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 300; 
-    background-color: var (--color-grey);
-    color: var(--color-light); 
+    background-color: var (var(--color-dark));
+    color: var(--color-dark); 
     letter-spacing: .05rem;   
 }
-
+ 
 .bg-light {
-    background: var (--color-light);
+    background: var (var(--color-dark-xx));
 }
 
 .bg-dark {
-    background-color: var(--color-dark) !important;
+    background-color: var(--color-dark-x) !important;
 }
 
 .p-6{
@@ -49,12 +49,15 @@ body{
     padding: 1.5rem 1rem; 
 }
 
-.register-bg {
-    background-image: url('C:\Users\54351\Documents\html2\imagenes\Estudio.jpg');
+#register {
+  background-image: url("../imagenes/Estudio\ Colaborativo.png");  
+     /* background-color: #f5f6f8;  */
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
+    min-width: 50vh;
 }
+
 .testimonial {
     bottom: 10px
 }
